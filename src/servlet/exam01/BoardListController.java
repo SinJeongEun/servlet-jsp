@@ -1,4 +1,4 @@
-package servlet;
+package servlet.exam01;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,17 +16,17 @@ import javax.servlet.http.HttpServletResponse;
 import dto.Board;
 
 
-@WebServlet(value="/Exam01Controller", loadOnStartup=1)
-public class Exam01Controller extends HttpServlet {
+@WebServlet(name = "exam01.BoardListController", urlPatterns = "/exam01/BoardListController", loadOnStartup=1)
+public class BoardListController extends HttpServlet {
 	
 	@Override
 	public void init(ServletConfig config) throws ServletException {
-		System.out.println("init() 실행");
+		System.out.println("BoardListController init() 실행");
 	}
 	
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("service() 실행");
+		System.out.println("BoardListController service() 실행");
 		
 		// 요청에 대한 결과 생성
 		List<Board> boards = new ArrayList<>();
@@ -44,14 +44,14 @@ public class Exam01Controller extends HttpServlet {
         request.setAttribute("boards", boards);
         
         //jsp로 이동
-        request.getRequestDispatcher("/WEB-INF/views/exam01_view.jsp")
+        request.getRequestDispatcher("/WEB-INF/views/exam01/boardlist.jsp")
         	.forward(request, response);
         
 	}
 	
 	@Override
 	public void destroy() {
-		System.out.println("11 destroy() 실행");
+		System.out.println("BoardListController destroy() 실행");
 	}
 
 }
