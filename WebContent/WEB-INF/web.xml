@@ -17,6 +17,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   <servlet>
   	<servlet-name>Exam02Controller</servlet-name>
   	<servlet-class>servlet.Exam02Controller</servlet-class>
+  	<load-on-startup>1</load-on-startup>
   </servlet>
   
   <servlet-mapping>
