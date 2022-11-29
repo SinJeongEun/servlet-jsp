@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "exam02.GetController", urlPatterns = "/exam02/GetController")
 public class GetController extends HttpServlet {
 	
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.getRequestDispatcher("/WEB-INF/views/exam02/get.jsp").forward(request, response);;
 	}
 
