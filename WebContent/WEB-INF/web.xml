@@ -23,7 +23,7 @@
   <servlet>
     <servlet-name>exam03.ContentController</servlet-name>
     <servlet-class>servlet.exam03.ContentController</servlet-class>
-    <init-param>
+    <init-param> 
     	<param-name>encoding</param-name>
     	<param-value>UTF-8</param-value>
     </init-param>
