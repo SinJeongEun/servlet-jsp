@@ -14,6 +14,13 @@
   <listener>
   	<listener-class>context.WebAppContext</listener-class>
   </listener>	
+  
+  <!-- Filter 등록 -->
+  <filter>
+ 	<filter-name>CharacterEncodingFilter</filter-name>
+  	<filter-class>filter.CharacterEncodingFilter</filter-class>
+  </filter>
+  
   <!-- 서블릿 설정 -->
   <servlet>
     <servlet-name>HomeController</servlet-name>
