@@ -9,7 +9,11 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
+
+  <!--Listener 설정  -->
+  <listener>
+  	<listener-class>context.WebAppContext</listener-class>
+  </listener>	
   <!-- 서블릿 설정 -->
   <servlet>
     <servlet-name>HomeController</servlet-name>
@@ -44,7 +48,6 @@
   <!-- 분 단위로 지정된다 , 20분 뒤에 HttpSession 객체가 제거된다-->
   	<session-timeout>20</session-timeout>
   </session-config>
-  
   
   
   

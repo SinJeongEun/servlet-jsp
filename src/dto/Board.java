@@ -6,11 +6,12 @@ import lombok.Data;
 
 @Data
 public class Board {
-	private int bno;
-	private String btitle;
-	private String bcontent;
-	private String bwriter;
-	private Date bdate;
-	
-
+   private int bno;
+   private String btitle;
+   private String bcontent;
+   private String bwriter;
+   private Date bdate;
+   private String bfileName;
+   private String bsavedName;
+   private String bcontentType;
 }

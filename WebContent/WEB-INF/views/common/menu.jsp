@@ -34,13 +34,19 @@
 	<li class="nav-item mb-2">
 		<h6 class="text-white">
 			<span class="mr-2">Exam06.</span>
-			<a class="text-white" href="/servletjsp/exam06/ContentController">상태유지-쿠키(클라이언트 측 저장)</a>
+			<a class="text-white" href="/servletjsp/exam06/ContentController">상태유지-Cookie(클라이언트 측 저장)</a>
 		</h6>
 	</li>
 	<li class="nav-item mb-2">
 		<h6 class="text-white">
 			<span class="mr-2">Exam07.</span>
-			<a class="text-white" href="/servletjsp/exam07/ContentController">상태유지-세션(서버측 저장)</a>
+			<a class="text-white" href="/servletjsp/exam07/ContentController">상태유지-HttpSession(서버측 저장, 해당 클라이언트)</a>
+		</h6>
+	</li>
+	<li class="nav-item mb-2">
+		<h6 class="text-white">
+			<span class="mr-2">Exam08.</span>
+			<a class="text-white" href="/servletjsp/exam08/ContentController">상태유지-ServletContext(서버측 저장, 모든 클라이언트)</a>
 		</h6>
 	</li>
 </ul>
