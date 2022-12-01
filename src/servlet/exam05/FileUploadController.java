@@ -23,7 +23,7 @@ public class FileUploadController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// 한글 복원을 위해서 문자셋을 지정
-		request.setCharacterEncoding("UTF-8");
+//		request.setCharacterEncoding("UTF-8");
 
 		// 멀티 파트의 데이터 추출하기
 		// 문자 파트의 정보 얻기
