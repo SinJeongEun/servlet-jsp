@@ -10,6 +10,7 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
+  <!-- 서블릿 설정 -->
   <servlet>
     <servlet-name>HomeController</servlet-name>
     <servlet-class>servlet.HomeController</servlet-class>
@@ -37,5 +38,21 @@
     <servlet-name>exam03.ContentController</servlet-name>
     <url-pattern>/exam03/ContentController</url-pattern>
   </servlet-mapping>
+  
+  <!-- session time out 설정 -->
+  <session-config>
+  <!-- 분 단위로 지정된다 , 20분 뒤에 HttpSession 객체가 제거된다-->
+  	<session-timeout>20</session-timeout>
+  </session-config>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
 </web-app>

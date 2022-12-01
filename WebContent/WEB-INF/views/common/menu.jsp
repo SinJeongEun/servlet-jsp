@@ -28,13 +28,19 @@
 	<li class="nav-item mb-2">
 		<h6 class="text-white">
 			<span class="mr-2">Exam05.</span>
-			<a class="text-white" href="/servletjsp/exam05/ContentController">응답 생성</a>
+			<a class="text-white" href="/servletjsp/exam05/ContentController">요청 정보 얻기</a>
 		</h6>
 	</li>
 	<li class="nav-item mb-2">
 		<h6 class="text-white">
 			<span class="mr-2">Exam06.</span>
-			<a class="text-white" href="/servletjsp/exam06/ContentController">상태유지-쿠키</a>
+			<a class="text-white" href="/servletjsp/exam06/ContentController">상태유지-쿠키(클라이언트 측 저장)</a>
+		</h6>
+	</li>
+	<li class="nav-item mb-2">
+		<h6 class="text-white">
+			<span class="mr-2">Exam07.</span>
+			<a class="text-white" href="/servletjsp/exam07/ContentController">상태유지-세션(서버측 저장)</a>
 		</h6>
 	</li>
 </ul>
