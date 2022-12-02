@@ -12,13 +12,15 @@
       3. ${2+5 } <br/>
       4. ${2>5 } <br/>
       <hr/>
-      <h4 class="mt-3">>Request 범위에 저장된 값 출력</h4>
-      
-      
-      <h4 class="mt-3">Session 범위에 저장된 값 출력</h4>
-       
-       
-       <h4 class="mt-3">ServletContext 범위에 저장된 값 출력</h4>
+      <h5 class="mt-3">Request -> Session -> ServletContext 범위에 저장된 값 출력</h5>
+      ${user.userId }
+      ${user.userName }
+      <br/>
+      ${board.bno },
+      ${board.btitle },
+      ${board.bcontent }
+      <br/>
+      ${info }
     </div>
 </div>
 
