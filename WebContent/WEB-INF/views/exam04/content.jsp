@@ -8,9 +8,9 @@
 	</div>
 	<div class="card-body">
        <h4>exam04 POST 방식</h4>
-		<a href="/servletjsp/exam04/HtmlResponseController" class="btn btn-info btn-sm">HTML 응답 생성</a>
-		<a href="/servletjsp/exam04/JsonResponseController" class="btn btn-info btn-sm">JOSN 응답 생성</a>
-		<a href="/servletjsp/exam04/FileResponseController" class="btn btn-info btn-sm">파일 다운로드 응답 생성</a>
+		<a href="${pageContext.request.contextPath}/exam04/HtmlResponseController" class="btn btn-info btn-sm">HTML 응답 생성</a>
+		<a href="${pageContext.request.contextPath}/exam04/JsonResponseController" class="btn btn-info btn-sm">JOSN 응답 생성</a>
+		<a href="${pageContext.request.contextPath}/exam04/FileResponseController" class="btn btn-info btn-sm">파일 다운로드 응답 생성</a>
  	</div>
 </div>
 <div class="card m-2">
@@ -18,7 +18,7 @@
       redirect
    </div>
    <div class="card-body">
-      <form  method="post" action="/servletjsp/exam04/ContentController">
+      <form  method="post" action="${pageContext.request.contextPath}/exam04/ContentController">
         <div class="form-group">
           <label for="email">Email address:</label>
           <input type="email" class="form-control" placeholder="Enter email" id="email">

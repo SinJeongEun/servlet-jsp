@@ -73,13 +73,23 @@
   	<session-timeout>20</session-timeout>
   </session-config>
   
+  <!-- Error 설정  -->
+  <!-- 방법 1 : error code 별 설정 -->
+  <error-page>
+  	<error-code>500</error-code>
+  	<location>/WEB-INF/views/exam10/error_500.jsp</location>
+  </error-page>
   
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/WEB-INF/views/exam10/error_404.jsp</location>
+  </error-page>
   
-  
-  
-  
-  
-  
-  
+  <!-- 방법2 : error type 별 설정 이게 error code 보다 우선순위가 더 높아 이게 실행된다 -->
+  <error-page>
+  	<exception-type>java.lang.NumberFormatException</exception-type>
+  	<location>/WEB-INF/views/exam10/error_num.jsp</location>
+  </error-page>
+ 
   
 </web-app>

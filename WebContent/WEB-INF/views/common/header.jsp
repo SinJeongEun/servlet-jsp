@@ -15,7 +15,7 @@
 		<div class="d-flex flex-column vh-100">
 			<nav class="navbar navbar-dark bg-dark text-white font-weight-bold">
 				<a class="navbar-brand" href="/servletjsp/HomeController"> 
-					<img src="/servletjsp/resources/images/tomcat.png" width="40" height="30" class="d-inline-block align-top">
+					<img src="${pageContext.request.contextPath}/resources/images/tomcat.png" width="40" height="30" class="d-inline-block align-top">
 					Servlet/JSP
 				</a>
 				<div>
