@@ -2,6 +2,8 @@ package dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import dto.Board;
 
@@ -25,4 +27,18 @@ public class BoardDao {
 	      pstmt.close();
 	      return rows;
 	   }
+
+	public int countRows(Connection conn) throws Exception {		
+		String sql = "select count(*) from boards2";
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		ResultSet rs = pstmt.executeQuery();
+		rs.next();
+		
+		int result = rs.getInt(1);
+		rs.close();
+		pstmt.close();
+		
+		return result;
+		
+	}
 }
